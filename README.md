@@ -9,7 +9,7 @@
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ## Project Overview
-This project aims to conduct an in-depth analysis of the stock prices of companies listed in the S&P 500 index, focusing on four major technology companies as examples: Apple (AAPL), Amazon (AMZN), Google (GOOG), and Microsoft (MSFT). The objective is to understand long-term trends in stock prices, calculate moving averages, and analyse the correlation between price movements.
+This project aims to conduct an in-depth analysis of the stock prices of companies listed in the S&P 500 index, focusing on four major technology companies as examples: **Apple (AAPL)**, **Amazon (AMZN)**, **Google (GOOG)**, and **Microsoft (MSFT)**. The objective is to understand long-term trends in stock prices, calculate moving averages, and analyse the correlation between price movements.
 
 ## Project Structure
 
@@ -25,13 +25,13 @@ This project aims to conduct an in-depth analysis of the stock prices of compani
 
 ### Problem Description
 
-This project aims to analyse the stock price movements over the past decade, using four major technology companies from the S&P 500 index as example—Apple, Amazon, Google, and Microsoft. The objective is to identify trends, patterns, and correlations in their stock performance through various statistical and visualisation techniques. By applying time series analysis, moving averages, and correlation analysis, the project seeks to uncover insights into the long-term growth, short-term volatility, and inter-company relationships that could help investors and analysts make informed decisions about these technology giants.
+This project aims to analyse the stock price movements over the past decade, using four major technology companies from the S&P 500 index as example — *Apple, Amazon, Google, and Microsoft*. The objective is to identify trends, patterns, and correlations in their stock performance through various statistical and visualisation techniques. By applying time series analysis, moving averages, and correlation analysis, the project seeks to uncover insights into the long-term growth, short-term volatility, and inter-company relationships that could help investors and analysts make informed decisions about these technology giants.
 
 ### Dataset Information
 
 The Standard and Poor's 500 or S&P 500 is the most famous financial benchmark in the world.
 
-This project primarily utilises the `sp500_stocks.csv` dataset for analysis, which contains stock data for 503 listed companies in the S&P 500 index, spanning from 2010 to the present, amounting to over 1.86 million rows. Additionally, the `sp500_index.csv` and `sp500_companies.csv` datasets are used to supplement the main data with information on the S&P 500 index and specific company details. The key attributes of the main dataset include:
+This project primarily utilises the [sp500_stocks.csv](https://www.kaggle.com/datasets/andrewmvd/sp-500-stocks/data?select=sp500_stocks.csv) dataset for analysis, which contains stock data for 503 listed companies in the S&P 500 index, spanning from 2010 to the present, amounting to over 1.86 million rows. Additionally, the `sp500_index.csv` and `sp500_companies.csv` datasets are used to supplement the main data with information on the S&P 500 index and specific company details. The key attributes of the main dataset include:
 
 - **Date:** Date.
 - **Symbol:** Company Symbol/Ticker.
@@ -74,12 +74,25 @@ In this project, I have introduced several improvements and innovations beyond t
 - While the original tutorial only utilised data from 2013 to 2018, I worked with a dataset spanning from 2010 to the present. This extended time frame, coupled with real-time updated data, provided a more comprehensive view of stock performance and market trends. The inclusion of more recent data enabled me to derive deeper insights and identify long-term trends that were previously inaccessible in the original analysis.
 
 **2.	Code Error Corrections and Enhancements:**
-- **Accurate Moving Average Calculations:** In the original tutorial, there was an issue when setting up the moving average windows. The tutorial did not account for different stocks when setting the window size, leading to anomalies in the moving average charts. I corrected this by using the groupby and transform functions to ensure the window size was applied correctly for each stock. This adjustment allowed for the generation of accurate moving average trend charts, reflecting the true price movements of each individual stock.
-- **Correct Handling of Missing Values in PairGrid Plot:** Another significant issue in the tutorial was the treatment of missing values when plotting the PairGrid. The original code reset the index for the four stocks without addressing the impact of missing values, which resulted in incorrect relationship plots. To rectify this, I used the ‘Date’ column as the index, ensuring a consistent time series alignment across all stocks. This adjustment allowed for an accurate analysis of the relationships between the stocks, eliminating any discrepancies caused by missing values and ensuring the integrity of the correlation analysis between the four stocks.
+- **Accurate Moving Average Calculations:** In the original tutorial, there was an issue when setting up the moving average windows. The tutorial did not account for different stocks when setting the window size, leading to anomalies in the moving average charts. I corrected this by using the **groupby and transform functions** to ensure the window size was applied correctly for each stock. This adjustment allowed for the generation of accurate moving average trend charts, reflecting the true price movements of each individual stock.
+- **Correct Handling of Missing Values in PairGrid Plot:** Another significant issue in the tutorial was the treatment of missing values when plotting the PairGrid. The original code reset the index for the four stocks without addressing the impact of missing values, which resulted in incorrect relationship plots. To rectify this, I **used the ‘Date’ column as the index**, ensuring a consistent time series alignment across all stocks. This adjustment allowed for an accurate analysis of the relationships between the stocks, eliminating any discrepancies caused by missing values and ensuring the integrity of the correlation analysis between the four stocks.
 
 These improvements not only addressed existing issues in the tutorial but also enhanced the overall accuracy and comprehensiveness of the project. By expanding the time frame and correcting technical errors, I was able to produce more reliable and insightful analysis outcomes.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) for details.
 
+## Acknowledgements
+This project is an adaptation of the concepts and methodologies taught by [Shan Singh](https://www.udemy.com/user/shantanu-singh-54/) on Udemy. Special thanks to Shan Singh for their guidance and instructional videos.
 
+### Original Tutorial
+[Data Analytics Real-World Projects in Python](https://www.udemy.com/course/data-analytics-projects-python/?couponCode=PLOYALTY0923)
+
+### Disclaimer
+Please note that this project is an adaptation of the concepts and methodologies taught by Shan Singh. Any code, data, or content not directly from Shan Singh is original work created for this project and is covered under the MIT License.
+
+## Contact Me!
+For any questions or feedback regarding this project, feel free to reach out:
+- Email: jiahao.shao30@gmail.com
+- LinkedIn: <b>[Jiahao Shao](https://www.linkedin.com/in/shao-jiahao)</b>
+- GitHub: <b>[Jiahao Shao](https://github.com/Jiahao30)</b>
