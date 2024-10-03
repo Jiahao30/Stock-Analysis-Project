@@ -86,7 +86,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) for 
 This project is an adaptation of the concepts and methodologies taught by [Shan Singh](https://www.udemy.com/user/shantanu-singh-54/) on Udemy. Special thanks to Shan Singh for their guidance and instructional videos.
 
 ### Original Tutorial
-[Data Analytics Real-World Projects in Python](https://www.udemy.com/course/data-analytics-projects-python/?couponCode=PLOYALTY0923)
+[Data Analytics Real-World Projects in Python](https://www.udemy.com/course/data-analytics-projects-python/)
 
 ### Disclaimer
 Please note that this project is an adaptation of the concepts and methodologies taught by Shan Singh. Any code, data, or content not directly from Shan Singh is original work created for this project and is covered under the MIT License.
